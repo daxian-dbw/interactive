@@ -147,7 +147,7 @@ namespace Microsoft.DotNet.Interactive
 
         public FrontendEnvironmentBase FrontendEnvironment
         {
-            get => _frontendEnvironment?? new AutomationEnvironment();
+            get => _frontendEnvironment ?? new AutomationEnvironment();
             internal set => _frontendEnvironment = value;
         }
     }
